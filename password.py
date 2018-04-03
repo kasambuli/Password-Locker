@@ -11,6 +11,12 @@ class Credentials:
 
         Credentials.credentials.append(self)
 
+    @classmethod
+    def display_credentials(cls):
+        '''
+        method that returns the user details
+        '''
+        return cls.credentials
 
 
 
