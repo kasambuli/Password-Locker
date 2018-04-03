@@ -9,7 +9,6 @@ The website layout has been created using python
 
 ## Known bugs
 no known bugs
-## Live Site
-https://kasambuli.github.io/Github-profile/
+
 ## MIT License
 Copyright (c) [2018] 
