@@ -66,3 +66,9 @@ def main():
                 print('\n')
                 print("You dont seem to have any credentials saved yet")
                 print('\n')
+
+        elif short_code == "exit":
+            print("Bye .......")
+            break
+        else:
+            print("I really didn't get that. Please use the short codes")
