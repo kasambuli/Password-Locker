@@ -39,8 +39,13 @@ def main():
             print ("User name ....")
             user_name = input()
 
-            print("Last name ...")
+            print("First name ...")
             first_name = input()
 
             print("Email address ...")
             email = input()
+
+            save_credential(create_credential(u_name,f_name,email)) # create and save new credential
+                            print ('\n')
+                            print(f"New User {u_name} ,{f_name} ,{email} created")
+                            print ('\n')
