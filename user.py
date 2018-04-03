@@ -7,3 +7,11 @@ from usercredentials import Credentials
         '''
         new_credential = Credentials(uname,fname,email)
         return new_credential
+
+    def save_credential(credentials):
+        '''
+        Function to save new user credentials
+        '''
+        credentials.save_credential()
+
+    
