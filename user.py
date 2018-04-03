@@ -1,11 +1,12 @@
 #!/usr/bin/env python3.6
+import random
 from usercredentials import Credentials
 
-def create_credential(uname,fname,email):
+def create_credential(u_name,f_name,email):
     '''
     Function to create a new user credential
     '''
-    new_credential = Credentials(uname,fname,email)
+    new_credential = Credentials(u_name,f_name,email)
     return new_credential
 
 def save_credential(credentials):
@@ -37,10 +38,10 @@ def main():
             print('.....')
 
             print ("User name ....")
-            user_name = input()
+            u_name = input()
 
             print("First name ...")
-            first_name = input()
+            f_name = input()
 
             print("Email address ...")
             email = input()
@@ -59,16 +60,26 @@ def main():
 
 
             for credential in display_credentials():
-                print(f"{contact.user_name} ,{contact.first_name} ,{email}")
+                print(f"{credential.user_name} ,{credential.first_name} ,{email}")
 
                 print('\n')
-            else:
-                print('\n')
-                print("You dont seem to have any credentials saved yet")
-                print('\n')
+        elif short_code == 'gp':
+            characters = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ?()@#$%^&*!"
+            length = len(characters)
+            print("Give your preferred password length")
+            passwordlength = int(input())
+            password = "".join(random.sample(characters,passwordlength ))
+            print ('\n')
+
+            print(password)
 
         elif short_code == "exit":
-            print("Bye .......")
+            print("Good Bye .......")
             break
         else:
             print("I really didn't get that. Please use the short codes")
+
+
+if __name__ == '__main__':
+
+    main()
