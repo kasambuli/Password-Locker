@@ -64,14 +64,19 @@ def main():
 
                 print('\n')
         elif short_code == 'gp':
-            characters = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ?()@#$%^&*!"
-            length = len(characters)
-            print("Give your preferred password length")
-            passwordlength = int(input())
-            password = "".join(random.sample(characters,passwordlength ))
-            print ('\n')
+            print("input username")
+            username = input()
+            if username == u_name:
+                characters = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ?()@#$%^&*!"
+                length = len(characters)
+                print("Give your preferred password length")
+                passwordlength = int(input())
+                password = "".join(random.sample(characters,passwordlength ))
+                print ('\n')
 
-            print(password)
+                print(password)
+            else:
+                print("wrong username")
 
         elif short_code == "exit":
             print("Good Bye .......")
