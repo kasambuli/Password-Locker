@@ -4,6 +4,13 @@ class Credentials:
     """
 
     credentials= []
+    def save_credential(self):
+        '''
+        save_credential method saves user details into credentials
+        '''
+
+        Credentials.credentials.append(self)
+
 
 
 
