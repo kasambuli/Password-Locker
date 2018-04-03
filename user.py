@@ -14,4 +14,8 @@ from usercredentials import Credentials
         '''
         credentials.save_credential()
 
-    
+    def display_credentials():
+        '''
+        Function that returns all the saved user credentials
+        '''
+        return Credentials.display_credentials()
