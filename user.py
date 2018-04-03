@@ -46,6 +46,23 @@ def main():
             email = input()
 
             save_credential(create_credential(u_name,f_name,email)) # create and save new credential
-                            print ('\n')
-                            print(f"New User {u_name} ,{f_name} ,{email} created")
-                            print ('\n')
+            print ('\n')
+            print(f"New User {u_name} ,{f_name} ,{email} created")
+            print ('\n')
+
+
+        elif short_code == 'dc':
+
+            if display_credentials():
+                print("Here is a list of all your details")
+                print('\n')
+
+
+            for credential in display_credentials():
+                print(f"{contact.user_name} ,{contact.first_name} ,{email}")
+
+                print('\n')
+            else:
+                print('\n')
+                print("You dont seem to have any credentials saved yet")
+                print('\n')
