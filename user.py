@@ -19,3 +19,9 @@ from usercredentials import Credentials
         Function that returns all the saved user credentials
         '''
         return Credentials.display_credentials()
+
+    def main():
+        print("Hey there, Welcome to password locker.What is your name?")
+            name = input()
+            print(f"Nice to meet you {name}.What are you here for?")
+            print('\n')
